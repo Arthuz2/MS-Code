@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista</title>
+    <style>
+         a{
+            text-decoration: none;
+            color: #000;
+            position: relative;
+        }
+
+        a::after {
+            content: " ";
+            width: 0%;
+            height: 2px;
+            background-color: #000;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+        }
+
+        a:hover::after{
+            width: 100%;
+            transition: 0.3s ease-in-out;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de Lista</h1>
+    <ul>
+        <li><a href="form.html" target="_blank">Formulario</a></li>
+        <li><a href="tabela.html" target="_blank">Tabela</a></li>
+    </ul>
+</body>
+</html>
