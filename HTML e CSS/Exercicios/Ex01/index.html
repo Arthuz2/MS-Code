@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Bem Vindo!</title>
+    <style>
+        *{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            height: 100%;
+        }
+
+        header {
+            background-color: rgb(232, 0, 0);
+            border-radius: 8px;
+            display: flex;
+        }
+
+        nav{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        
+        ul{
+            display: flex;
+            align-items: center;
+        }
+
+        li {
+            display: flex;
+            margin-left: 10px;
+        }
+
+        a{
+            text-decoration: none;
+            color: #fff;
+            position: relative;
+        }
+
+        a::after {
+            content: " ";
+            width: 0%;
+            height: 2px;
+            background-color: white;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+        }
+
+        a:hover::after{
+            width: 100%;
+            transition: 0.3s ease-in-out;
+        }
+
+        h1 {
+            margin-left: 8px;
+            display: flex;
+        }
+        
+        div {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 34vw;
+            width: 100%;
+        }
+
+        div h1 {
+            font-size: 50px;
+            margin-top: 10px;
+        }
+
+        button {
+            background-color: rgb(209, 0, 0);
+            margin-top: 10px;
+            padding: 5px;
+            color: #fff;
+        }
+
+        footer {
+            color: #fff;
+            background-color: #000;
+            padding: 3px;
+            display: flex;
+            align-items: center;
+            justify-content: start;
+            border-radius: 8px;
+            height: 6vw;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <h1><a href="index.html">MS Code</a></h1>
+            <ul>
+                <li><a href="cadastro.html"><strong>Cadastro</strong></a></li>
+                <li><a href="#"><strong>Sobre nós</strong></a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div>
+            <h1>Bem Vindo!</h1>
+        </div>
+    </main>
+    <footer>
+        Copyright &copy; 2024
+    </footer>
+</body>
+</html>
