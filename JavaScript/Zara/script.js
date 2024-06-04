@@ -24,7 +24,7 @@ $(document).ready(function(){
             $('.add-to-cart').attr('disabled', false);   
             $('#userInfo').show(function(){;
                 const p = $('<p></p>');
-                const dados = `Nome : ${nome} <br> Email: ${email}`;
+                const dados = `Nome: ${nome} <br> Email: ${email}`;
                 p.html(dados);
                 $('#userInfo').css({"display": "flex", "justify-content": "start", "font-weight": "500", "font-size": "20px"})
                 $('#userInfo').append(p);
