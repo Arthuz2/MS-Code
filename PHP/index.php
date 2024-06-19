@@ -33,20 +33,21 @@ function metrosEmKm($vel){
 //7 – Escreva um algoritmo que leia a altura e o peso de uma pessoa, calcule o seu IMC (Índice de Massa Corporal) e exiba para o usuário.
 function imc($alt,$peso){
   $imc = $peso/($alt**2);
-  if ($imc < 16.9) {
-    return "Muito abaixo do peso, imc: $imc";
-  }elseif ($imc > 17 && $imc < 18.4) {
-    return "Abaixo do peso, imc: $imc";
-  }elseif ($imc > 18.5 && $imc < 24.9) {
-    return "Peso normal, imc: $imc";
-  }elseif ($imc > 25 && $imc < 29.9) {
-    return "Acima do peso, imc: $imc";
-  }elseif ($imc > 30 && $imc < 34.9) {
-    return "Obesidade grau I, imc: $imc";
-  }elseif ($imc > 35 && $imc < 40) {
-    return "Obesidade grau II, imc: $imc";
-  }else {
-    return "Obesidade grau III, imc: $imc";
+  switch ($imc) {
+    case ($imc < 16.9):
+      return "Muito abaixo do peso, imc: $imc";
+    case ($imc > 17 && $imc < 18.4):
+      return "Abaixo do peso, imc: $imc";
+    case ($imc > 18.5 && $imc < 24.9):
+      return "Peso normal, imc: $imc";
+    case ($imc > 25 && $imc < 29.9):
+      return "Acima do peso, imc: $imc";
+    case ($imc > 30 && $imc < 34.9):
+      return "Obesidade grau I, imc: $imc";
+    case ($imc > 35 && $imc < 40):
+      return "Obesidade grau II, imc: $imc";
+    default:
+      return "Obesidade grau III, imc: $imc";
   }
 }
 
@@ -117,3 +118,5 @@ echo areaTrapezio(2,4,8) . "<br>";
 echo mediaPonderada(8,9,10) . "<br>";
 echo parcelas(70) . "<br>";
 echo consumoCombustivel(1.5,0.8) . "<br>";
+
+////*[@id="26cf3baa-1638-4575-a889-cdb8b6165c09"]/svg/circle[2]
