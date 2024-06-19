@@ -118,5 +118,3 @@ echo areaTrapezio(2,4,8) . "<br>";
 echo mediaPonderada(8,9,10) . "<br>";
 echo parcelas(70) . "<br>";
 echo consumoCombustivel(1.5,0.8) . "<br>";
-
-////*[@id="26cf3baa-1638-4575-a889-cdb8b6165c09"]/svg/circle[2]
