@@ -11,7 +11,7 @@ function verificaSoma(int $n1,int $n2,int $n3): string{
 }
 
 //2 - Faça um algoritmo para receber um número qualquer e imprimir na tela se o número é par ou ímpar, positivo ou negativo.
-function parOuImpar(int $n): string{
+function parOuImparNegativoOuPositivo(int $n): string{
   if ($n % 2 == 0){
     if ($n > 0){
       return "Par, positivo";
@@ -53,7 +53,7 @@ function qtdSalariosMinimos(int $n): string{
 }
 
 echo verificaSoma(3,4,8) . "<br>";
-echo parOuImpar(0) . "<br>";
+echo parOuImparNegativoOuPositivo(0) . "<br>";
 echo somaValoresIguais(3,2) . "<br>";
 echo antecessorSucessor(12) . "<br>";
 echo qtdSalariosMinimos(8344.34) . "<br>";
