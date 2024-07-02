@@ -2,7 +2,7 @@
     "name": "mscode/poo",
     "autoload": {
         "psr-4": {
-            "App": "src/"
+            "App\\Poo\\": "src/"
         }
     },
     "authors": [
@@ -10,6 +10,5 @@
             "name": "Arthuz2",
             "email": "arthur.porcino43@gmail.com"
         }
-    ],
-    "require": {}
+    ]
 }

@@ -1,6 +1,9 @@
 <?php
 
-require_once 'vendor/autoload.php';
+require_once './vendor/autoload.php';
 
-$pai = new Pai('Alex', '1980-07-06');
-$filho = new Filho('Arthur', );
+use App\Poo\Pessoa;
+
+$pessoa = new Pessoa('pessoa', '2008-04-28', 'Masculino');
+
+echo $pessoa->getIdade();
