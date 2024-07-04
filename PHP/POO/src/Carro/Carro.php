@@ -9,7 +9,6 @@ class Carro {
   private DateTimeImmutable $ano;
   private string $modelo;
   private string $cor;
-  private string $idade;
 
   public function __construct(
     string $nome,
