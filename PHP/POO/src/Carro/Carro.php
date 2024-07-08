@@ -34,10 +34,11 @@ class Carro {
     return sprintf("
     Nome: %s <br>
     Modelo: %s <br>
-    Ano de Compra: %d <br>
-    Placa: %s<br>Cor: %s <br>
+    Data da Compra: %d <br>
+    Placa: %s <br>
+    Cor: %s <br>
     Idade: %d",
-    $this->nome,$this->modelo,$this->ano->format('Y'),$this->placa,$this->cor,$this->getIdade());
+    $this->nome,$this->modelo,$this->ano->format('d/m/Y'),$this->placa,$this->cor,$this->getIdade());
   }
 
   public function getInfos(){
