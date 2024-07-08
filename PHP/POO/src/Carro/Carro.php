@@ -29,7 +29,7 @@ class Carro {
     return $idade->format('%y'); 
   }
 
-  public function __toString()
+  private function __toString()
   {
     return sprintf("
     Nome: %s <br>
