@@ -7,21 +7,31 @@ namespace App\Poo;
 class Calculadora
 {
 
-  private string $calculo;
-  private int $resultado;
+  private string $expressao;
 
-  public function __construct(string $calculo)
+  public function __construct(string $expressao)
   {
-    $this->calculo = $calculo;
+    $this->expressao = $expressao;
   }
 
-  private function calcular()
+  public function calcular()
   {
+    $nums = []; //Array de números da expressão
+    $ope = []; //Array de operadores da expressão
+    $calc = str_split($this->expressao); //Transforma a expressão em um Array
+    $expressao = preg_replace("/[^0-9]/",",", $this->expressao);
     
+    foreach($calc as $val){
+      if(($val == "+") || ($val == "-") || ($val == "*") || ($val == "/")){
+        $ope[] = $val;
+      }
+    }
+    return $expressao;
   }
 
-  public function getResultado(): int
-  {
-    return $this->resultado;
+  public function getResultado()
+  { 
+    $resultado[] = $this->calcular();
+    return $resultado;
   }
 }

@@ -7,6 +7,7 @@ require_once './vendor/autoload.php';
 
 // use App\Poo\Pessoa;
 // use App\Poo\Carro\Carro;
+use App\Poo\Calculadora;
 
 // $pessoa = new Pessoa('pessoa', '2008-04-28', 'Masculino');
 // echo $pessoa->getIdade();
@@ -14,10 +15,9 @@ require_once './vendor/autoload.php';
 // $carro = new Carro('Supra MK4', 'ABC1234', new DateTimeImmutable('2010-08-10'), 'SUPRA', 'Branco');
 // echo $carro->getInfos();
 
-use App\Poo\Calculadora;
+$calc = new Calculadora("120+15-5*2");
 
-$calc = new Calculadora("1+1");
-
-$var = "abraca";
-
-$var[0];
+echo "<pre>";
+print_r($calc->calcular());
+echo "</pre>";
+exit;
