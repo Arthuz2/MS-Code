@@ -15,9 +15,6 @@ use App\Poo\Calculadora;
 // $carro = new Carro('Supra MK4', 'ABC1234', new DateTimeImmutable('2010-08-10'), 'SUPRA', 'Branco');
 // echo $carro->getInfos();
 
-$calc = new Calculadora("120+15-5*2");
+$calc = new Calculadora(2,"/",2);
 
-echo "<pre>";
-print_r($calc->calcular());
-echo "</pre>";
-exit;
+echo $calc->getResultado();
