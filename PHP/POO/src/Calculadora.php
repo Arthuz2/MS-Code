@@ -13,7 +13,7 @@ class Calculadora
     $this->expressao = $expressao;
   }
 
-  public function calcular()
+  private function calcular()
   {
     $res = $this->expressao[0];
 
