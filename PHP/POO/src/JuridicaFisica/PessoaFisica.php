@@ -4,10 +4,15 @@ namespace App\Poo\JuridicaFisica;
 
 class PessoaFisica extends Pessoa
 {
-  public CpfCnpj $documento;
+  private CpfCnpj $cpfCnpj;
+
+  public function __construct()
+  {
+    $this->cpfCnpj = new CpfCnpj();
+  }
 
   public function documento(): string
   {
-   return $this->documento(); 
+    return $this->cpfCnpj->documentoFormatado();
   }
 }

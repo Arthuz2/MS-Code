@@ -14,9 +14,4 @@ abstract class Pessoa
     $this->nome = $nome;
     $this->documento = str_replace(['.', '-', '/'], '', $documento);
   }
-
-  public function documento(): string
-  {
-    return $this->documento;
-  }
 }

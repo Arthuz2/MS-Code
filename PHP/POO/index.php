@@ -1,5 +1,6 @@
 <?php
 
+use App\Poo\JuridicaFisica\PessoaFisica;
 
 ini_set('display_errors', 1);
 error_reporting(E_ALL);
@@ -9,8 +10,6 @@ require_once './vendor/autoload.php';
 // use App\Poo\Pessoa;
 // use App\Poo\Carro\Carro;
 // use App\Poo\Calculadora;
-use App\Poo\JuridicaFisica\PessoaFisica;
-use App\Poo\JuridicaFisica\PessoaJuridica;
 
 // $pessoa = new Pessoa('pessoa', '2008-04-28', 'Masculino');
 // echo $pessoa->getIdade();
@@ -26,14 +25,3 @@ $pf = new PessoaFisica(
   '123.456.789-00'
 );
 
-$pj = new PessoaJuridica(
-  'Di Tal',
-  '12.345.678/0001-99'
-);
-
-var_dump(
-
-  $pf->documento->documentoFormatado(),
-  $pj->documento->documentoFormatado(),
-
-);

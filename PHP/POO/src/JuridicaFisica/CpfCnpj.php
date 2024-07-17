@@ -4,7 +4,12 @@ namespace App\Poo\JuridicaFisica;
 
 class CpfCnpj
 {
-  protected string $documento;
+  public function __construct(
+    private string $documento
+  )
+  {
+    $this->documento = $documento;
+  }
 
   public function documentoFormatado(): string
   {
