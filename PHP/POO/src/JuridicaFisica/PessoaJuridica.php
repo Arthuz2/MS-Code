@@ -6,9 +6,10 @@ class PessoaJuridica extends Pessoa
 {
   private CpfCnpj $cpfCnpj;
 
-  public function __construct()
+  public function __construct(string $nome, string $documento)
   {
-    $this->cpfCnpj = new CpfCnpj($this->documento);
+    parent::__construct($nome, $documento);
+    $this->cpfCnpj = new CpfCnpj($documento);
   }
 
   public function documento(): string

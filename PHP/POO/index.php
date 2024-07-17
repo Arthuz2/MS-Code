@@ -1,6 +1,8 @@
 <?php
 
+use App\Poo\JuridicaFisica\CpfCnpj;
 use App\Poo\JuridicaFisica\PessoaFisica;
+use App\Poo\JuridicaFisica\PessoaJuridica;
 
 ini_set('display_errors', 1);
 error_reporting(E_ALL);
@@ -25,3 +27,12 @@ $pf = new PessoaFisica(
   '123.456.789-00'
 );
 
+$pj = new PessoaJuridica(
+  'Di Tal',
+  '12.345.678/0001-99'
+);
+
+var_dump(
+  $pf->documento(),
+  $pj->documento()
+);
