@@ -1,0 +1,8 @@
+{
+    "name": "mscode/ex03",
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/"
+        }
+    }
+}
