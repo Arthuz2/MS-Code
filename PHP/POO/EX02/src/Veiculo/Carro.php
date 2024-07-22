@@ -1,6 +1,6 @@
 <?php
 
-namespace App;
+namespace App\Veiculo;
 
 class Carro implements Veiculo
 {

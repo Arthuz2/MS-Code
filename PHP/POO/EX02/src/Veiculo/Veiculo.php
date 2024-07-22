@@ -1,6 +1,6 @@
 <?php 
 
-namespace App;
+namespace App\Veiculo;
 
 interface Veiculo
 {
@@ -8,5 +8,3 @@ interface Veiculo
   public function dirigeOuPilota(): string; 
   public function descricao(): string;
 }
-
-//array shape

@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Poo\JuridicaFisica;
+namespace App\Pessoa;
 
 class CpfCnpj
 {

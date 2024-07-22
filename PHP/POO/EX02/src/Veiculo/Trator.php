@@ -1,21 +1,21 @@
 <?php
 
-namespace App;
+namespace App\Veiculo;
 
-class Moto implements Veiculo
+class Trator implements Veiculo
 {
   public function qntRodas(): int
   {
-    return 2;
+    return 4;
   }
 
   public function dirigeOuPilota(): string
   {
-    return 'Pilota';
+    return 'Dirige';
   }
 
   public function descricao(): string
   {
-    return 'radandandandan';
+    return 'Vuuuuuum';
   }
 }
