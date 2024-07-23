@@ -28,7 +28,7 @@ function toogleFilter() {
   else {
     filter.style.display = 'none';
     filterOpen.style.display = 'none';
-    filterClose.style.display = 'block';    
+    filterClose.style.display = 'block';
   }
 }
 
@@ -70,7 +70,7 @@ function addlista() {
       </span><br>`;
     li.html(ctd);
     $('#cartItems').append(li);
-    $('.titleItems').css({"font-size": "20px", "font-weight": "400"});
-    $('.priceItems').css({"font-size": "18px"});
+    $('.titleItems').css({ "font-size": "20px", "font-weight": "400" });
+    $('.priceItems').css({ "font-size": "18px" });
   });
 }

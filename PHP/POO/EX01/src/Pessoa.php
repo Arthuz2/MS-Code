@@ -1,24 +1,27 @@
 <?php
 
 namespace App\Poo;
+
 use DateTimeImmutable;
 
-class Pessoa {
+class Pessoa
+{
   protected string $nome;
   protected DateTimeImmutable $dataNascimento;
   protected string $genero;
 
   public function __construct(
-      string $nome,
-      string $dataNascimento,
-      string $genero
-  ){
-      $this->nome = $nome;
-      $this->dataNascimento = new DateTimeImmutable($dataNascimento);
-      $this->genero = $genero;
+    string $nome,
+    string $dataNascimento,
+    string $genero
+  ) {
+    $this->nome = $nome;
+    $this->dataNascimento = new DateTimeImmutable($dataNascimento);
+    $this->genero = $genero;
   }
 
-  public function getIdade(){
+  public function getIdade()
+  {
     $idade = $this->dataNascimento->diff(new DateTimeImmutable('now'));
     return $idade->format('%y');
   }

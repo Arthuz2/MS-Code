@@ -1,21 +1,22 @@
-$(document).ready(function(){
-    $('#saveButton').click(function(event){
-        event.preventDefault();
+$(document).ready(function () {
+  $('#saveButton').click(function (event) {
+    event.preventDefault();
 
-        var nome = $('#name').val();
-        var email = $('#email').val();
+    var nome = $('#name').val();
+    var email = $('#email').val();
 
-        if (nome != "" && email != "") {
-            $('.btn').attr('disabled', false);
-            $('#userInfo').show(function(){;
-                const p = $('<p></p>');
-                const dados = `Nome : ${nome} <br> Email: ${email}`;
-                p.html(dados);
-                $('#userInfo').css({"display": "flex", "justify-content": "start", "font-weight": "500", "font-size": "20px"})
-                $('#userInfo').append(p);
-            });
-        }
-    });
+    if (nome != "" && email != "") {
+      $('.btn').attr('disabled', false);
+      $('#userInfo').show(function () {
+        ;
+        const p = $('<p></p>');
+        const dados = `Nome : ${nome} <br> Email: ${email}`;
+        p.html(dados);
+        $('#userInfo').css({ "display": "flex", "justify-content": "start", "font-weight": "500", "font-size": "20px" })
+        $('#userInfo').append(p);
+      });
+    }
+  });
 });
 
 var total = 0;
@@ -54,7 +55,7 @@ function addlista() {
       </span><br>`;
     li.html(ctd);
     $('#cartItems').append(li);
-    $('.titleItems').css({"font-size": "20px", "font-weight": "400"});
-    $('.priceItems').css({"font-size": "18px"});
+    $('.titleItems').css({ "font-size": "20px", "font-weight": "400" });
+    $('.priceItems').css({ "font-size": "18px" });
   });
 }

@@ -36,10 +36,10 @@ function toogleMenu() {
     filterOpen.style.display = 'none'
   }
 
-  if (nav.style.display == 'none' && filter.style.display == 'flex'){
+  if (nav.style.display == 'none' && filter.style.display == 'flex') {
     filterClose.style.display = 'none';
     filterOpen.style.display = 'block'
-  }else if (nav.style.display == 'none' && filter.style.display == 'none'){
+  } else if (nav.style.display == 'none' && filter.style.display == 'none') {
     filterClose.style.display = 'block';
     filterOpen.style.display = 'none'
   }
@@ -67,7 +67,7 @@ function toogleFilter() {
   else {
     filter.style.display = 'none';
     filterOpen.style.display = 'none';
-    filterClose.style.display = 'block';    
+    filterClose.style.display = 'block';
   }
 }
 

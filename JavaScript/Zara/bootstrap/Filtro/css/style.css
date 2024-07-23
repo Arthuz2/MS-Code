@@ -1,5 +1,6 @@
 nav a,
-nav button, nav li{
+nav button,
+nav li {
   color: #3c3a36;
   text-decoration: none;
   background-color: inherit;
@@ -51,7 +52,7 @@ nav button.active {
 #filter_menu .hide {
   width: 35px;
   margin-left: 0px;
-  display:none;
+  display: none;
 }
 
 .main-filter {
@@ -142,7 +143,7 @@ footer {
 .media-icons {
   display: flex;
   align-items: center;
-  justify-content: center; 
+  justify-content: center;
 }
 
 .media-icons a {

@@ -1,6 +1,6 @@
-$(document).ready(function(){
-    
-    $("#soma").click(function(){
+$(document).ready(function () {
+
+    $("#soma").click(function () {
         var n1 = document.getElementById('num1').value;
         var n2 = document.getElementById('num2').value;
 
@@ -11,7 +11,7 @@ $(document).ready(function(){
         document.getElementById("text").innerHTML = resultado;
     });
 
-    $("#subt").click(function(){
+    $("#subt").click(function () {
         var n1 = document.getElementById('num1').value;
         var n2 = document.getElementById('num2').value;
 

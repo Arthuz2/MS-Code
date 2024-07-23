@@ -17,21 +17,21 @@ class Calculadora
   {
     $res = $this->expressao[0];
 
-    for ($i = 1; $i < count($this->expressao); $i+= 2){
+    for ($i = 1; $i < count($this->expressao); $i += 2) {
       $ope = $this->expressao[$i];
-      $proxNum = $this->expressao[$i+1];
+      $proxNum = $this->expressao[$i + 1];
 
-      if($ope == "+"){
+      if ($ope == "+") {
         $res += $proxNum;
       }
-      if ($ope == "-"){
+      if ($ope == "-") {
         $res -= $proxNum;
       }
       if ($ope == "*") {
         $res *= $proxNum;
       }
-      if ($ope == "/"){
-        if ($proxNum == 0){
+      if ($ope == "/") {
+        if ($proxNum == 0) {
           echo "Divisão por Zero";
         }
         $res /= $proxNum;
@@ -41,7 +41,7 @@ class Calculadora
   }
 
   public function getResultado()
-  { 
+  {
     return $this->calcular();
   }
 }

@@ -31,7 +31,8 @@ label {
     font-family: "Indie Flower", cursive;
 }
 
-.soma,.sub {
+.soma,
+.sub {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -66,4 +67,4 @@ input {
 button {
     width: 20px;
     height: 20px;
-}   
+}

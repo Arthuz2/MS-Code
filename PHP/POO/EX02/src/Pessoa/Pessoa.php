@@ -20,13 +20,13 @@ abstract class Pessoa
   }
 
   protected function dirige(Veiculo $veiculo): bool
-	{
-    if($veiculo instanceof Carro){
+  {
+    if ($veiculo instanceof Carro) {
       return true;
     }
-    if($veiculo instanceof Moto){
+    if ($veiculo instanceof Moto) {
       return true;
     }
     return false;
-	}
+  }
 }

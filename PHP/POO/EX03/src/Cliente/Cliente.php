@@ -17,5 +17,4 @@ class Cliente
   {
     return $this->produto->isMovel($this->produto);
   }
-
 }

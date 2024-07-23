@@ -84,7 +84,7 @@ nav button {
 #filter_menu .hide {
   width: 35px;
   margin-left: 0px;
-  display:none;
+  display: none;
 }
 
 .main-filter {
@@ -249,7 +249,7 @@ footer {
 .media-icons {
   display: flex;
   align-items: center;
-  justify-content: center; 
+  justify-content: center;
 }
 
 .media-icons a {
@@ -370,5 +370,5 @@ footer {
   .main-filter {
     display: none;
   }
-  
+
 }

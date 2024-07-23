@@ -1,4 +1,4 @@
-<?php 
+<?php
 
 require_once './vendor/autoload.php';
 
@@ -23,7 +23,10 @@ $pf = new PessoaFisica(
 $pj = new PessoaJuridica(
   'Di tal',
   '12.345.678/0001-99',
-  new Moto, new Carro, new Carro, new Trator
+  new Moto,
+  new Carro,
+  new Carro,
+  new Trator
 );
 
 var_dump(
